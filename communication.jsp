@@ -6,10 +6,9 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="home.jsp">Home</a>
+        <a href="index.jsp">Home</a>
         <a href="donor.jsp">Donors</a>
         <a href="projects.jsp">Projects</a>
-        <a href="reports.jsp">Reports</a>
         <a href="communication.jsp" class="active">Communication</a>
         <a href="guidelines.jsp">Guidelines</a>
     </div>

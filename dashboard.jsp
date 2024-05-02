@@ -1,7 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Donor Guidelines and Instructions</title>
+    <title>Dashboard - Social Donor Management System</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         /* Global Styles */
@@ -13,7 +15,6 @@
             background-image: url('s.jpg'); /* Change 's.jpg' to your image file */
             background-size: cover;
             background-position: center;
-            color: #333; /* Updated text color */
         }
 
         .navbar {
@@ -35,6 +36,7 @@
             color: black;
         }
 
+        /* Content Styles */
         .content {
             padding: 20px;
             margin-top: 20px;
@@ -43,46 +45,18 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
-            color: #333;
+        /* Back Button Styles */
+        .back-button {
+            margin-bottom: 20px;
         }
 
-        p {
-            color: #666;
-        }
-
-        /* Form Styles */
-        form {
-            margin-top: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input[type="text"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-right: 10px;
-        }
-
-        button:hover {
-            background-color: #45a049;
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            .navbar a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
         }
     </style>
 </head>
@@ -95,19 +69,22 @@
         <a href="guidelines.jsp">Donor Guidelines and Instructions</a>
     </div>
     <div class="content">
-        <h1>Donor Guidelines and Instructions</h1>
-        <form action="process_guidelines.jsp" method="post">
-            <label for="guideline_title">Guideline Title</label>
-            <input type="text" id="guideline_title" name="guideline_title" required>
-
-            <label for="guideline_description">Guideline Description</label>
-            <textarea id="guideline_description" name="guideline_description" rows="4" required></textarea>
-
-            <button type="submit">Add Guidelines</button>
-        </form>
-
-        <!-- Additional Information -->
-        <p>For more information, please contact us at support@donormanagement.com</p>
+        <h1>Dashboard</h1>
+        <p>Welcome to the Dashboard of the Social Donor Management System.</p>
+        
+        <!-- Back Button to Home Page -->
+        <div class="back-button">
+            <a href="index.jsp">Back to Home</a>
+        </div>
+        
+        <!-- Links to All Pages -->
+        <h2>Quick Access</h2>
+        <ul>
+            <li><a href="donor.jsp">Donor Management</a></li>
+            <li><a href="project.jsp">Project and Survey Creation</a></li>
+            <li><a href="impact.jsp">Social Impact Assessment</a></li>
+            <li><a href="guidelines.jsp">Donor Guidelines and Instructions</a></li>
+        </ul>
     </div>
 </body>
 </html>
